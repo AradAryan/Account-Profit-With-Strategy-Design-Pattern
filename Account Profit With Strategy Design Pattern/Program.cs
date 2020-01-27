@@ -10,7 +10,7 @@ namespace Account_Profit_With_Strategy_Design_Pattern
     {
         static void Main(string[] args)
         {
-
+            
         }
     }
 }
