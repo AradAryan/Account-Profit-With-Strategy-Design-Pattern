@@ -8,14 +8,14 @@ namespace Account_Profit_With_Strategy_Design_Pattern
 {
     class Account
     {
-        public int LastBalanceID { get; set; }
+        public long LastBalanceID { get; set; }
         public string ModifiedDate { get; set; }
         public string ModifiedeTime { get; set; }
         public string AccountNumber { get; set; }
-        public int CustomerID { get; set; }
-        public string ModiCurrentBalancefiedDate { get; set; }
-        public int CurrentBalance { get; set; }
-        public char CurrentBalanceFlag { get; set; }
+        public string CustomerID { get; set; }
+        public int CurrentBalanceInt { get; set; }
+        public string CurrentBalance { get; set; }
+        public bool CurrentBalanceFlag { get; set; }
         public string FileDate { get; set; }
     }
 }
