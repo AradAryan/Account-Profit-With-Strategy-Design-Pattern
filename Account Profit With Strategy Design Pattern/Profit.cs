@@ -1,29 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.Generic;
 
 namespace Account_Profit_With_Strategy_Design_Pattern
 {
     class Profit
     {
         /// <summary>
-        /// Caculate and Returns Benefits.
-        /// </summary>
-        /// <returns></returns>
-        public void Benefits(List<Account> accounts)
-        {
-            var accounts02 = accounts.GroupBy(account => account.AccountNumber);
-        }
-
-        /// <summary>
         /// Returns a List<ProfitStartegy> of Accounts Informations From CSV File
         /// </summary>
         /// <param name="path"> CSV File Address </param>
         /// <returns> List<ProfitStrategy> </returns>
-        public List<Account> GetAccounts(string path)
+        public IEnumerable<IGrouping<string, Account>> GetAccounts(string path)
         {
             List<Account> list = new List<Account>();
 
@@ -55,7 +46,8 @@ namespace Account_Profit_With_Strategy_Design_Pattern
                     //LastBalanceID,ModifiedDate,ModifiedeTime,AccountNumber,CustomerID,CurrentBalance,CurrentBalanceFlag,FileDate
                 }
             }
-            return list;
+            var output = list.GroupBy(account => account.AccountNumber);
+            return output;
         }
     }
 }
