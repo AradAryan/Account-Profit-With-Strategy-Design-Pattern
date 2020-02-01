@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Account_Profit_With_Strategy_Design_Pattern
 {
+    /// <summary>
+    /// LastBalanceID,ModifiedDate,ModifiedeTime,AccountNumber,CustomerID,CurrentBalance,CurrentBalanceFlag,FileDate
+    /// </summary>
     class Account
     {
         public long LastBalanceID { get; set; }
@@ -19,4 +22,3 @@ namespace Account_Profit_With_Strategy_Design_Pattern
         public string FileDate { get; set; }
     }
 }
-//LastBalanceID,ModifiedDate,ModifiedeTime,AccountNumber,CustomerID,CurrentBalance,CurrentBalanceFlag,FileDate
