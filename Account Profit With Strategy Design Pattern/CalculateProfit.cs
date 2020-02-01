@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Account_Profit_With_Strategy_Design_Pattern
 {
+    /// <summary>
+    /// Contains Calculate Function and Profit Percent Encapsulated Field and Property.   
+    /// </summary>
     class CalculateProfit
     {
         #region Fields & Properties
