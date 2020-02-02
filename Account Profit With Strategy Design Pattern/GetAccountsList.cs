@@ -25,7 +25,7 @@ namespace Account_Profit_With_Strategy_Design_Pattern
             {
                 StreamReader streamReader = new StreamReader(path);
                 streamReader.ReadLine().Split(',');
-                string[] context =
+                string[] context =  
                     File.ReadAllLines(path);
                 for (int i = 1; i < context.Length; i++)
                 {

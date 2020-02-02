@@ -22,7 +22,17 @@ namespace Account_Profit_With_Strategy_Design_Pattern
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            CalculateProfit.CalculateProfits
+            var profit02 =
+                new CalculateProfit02(12);
+            var profit03 =
+                new CalculateProfit03(13.5);
+            var profit04 =
+                new CalculateProfit04(14);
+            profit02.CalculateProfits
+                (GetAccountsList.GetAccounts(path));
+            profit03.CalculateProfits
+                (GetAccountsList.GetAccounts(path));
+            profit04.CalculateProfits
                 (GetAccountsList.GetAccounts(path));
 
             ///Ending

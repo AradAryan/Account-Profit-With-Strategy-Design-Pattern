@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
-    <Compile Include="CalculateProfit.cs" />
+    <Compile Include="CalculateProfit04.cs" />
+    <Compile Include="CalculateProfit03.cs" />
+    <Compile Include="CalculateProfit02.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GetAccountsList.cs" />
